@@ -1,0 +1,37 @@
+/* About content style*/
+.About-content{
+    grid-area: content;
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template: repeat(4,225px)/repeat(4,1fr);
+}
+.About-post{
+    background-color: rgba(200, 232, 255, 0.4); 
+    border-radius: 10px;
+    grid-area: 2/1/4/3;
+    height:max-content ;
+    margin: 0 50px;
+    font-family: "Irish Grover", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+p{  margin: 10px;}
+#Alaaeldin{
+    font-size: 64px;
+}
+.About-image{
+    grid-area: 2/3/4/-1;
+    margin: 0 50px;
+    border-radius: 30px;
+}
+/* media query*/
+@media(max-width: 1000px){
+    .About-content{
+        grid-area: content;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
