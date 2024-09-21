@@ -1,0 +1,58 @@
+/* home content style*/
+.home-content{
+    grid-area: "content";
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template: repeat(4,auto)/repeat(4,1fr);
+}
+.first-post{
+    grid-area: 2/1/4/3;
+    margin: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.second-post{
+    grid-area: 2/3/4/-1;
+    margin: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sleep-post,.alaa-post{
+    background-color: rgba(200, 232, 255, 0.4); 
+    border-radius: 2vw;
+    height:max-content ;
+    margin: 3vw;
+}
+.welcome-content{
+    font-family: "Irish Grover", system-ui;
+    font-weight: 8vw;
+    font-style: normal;
+    font-size: 2vw;
+    margin: 2vw;
+}
+#Alaaeldin{
+     font-size: 3vw;
+}
+.head-post{
+    font-size: 3vw;
+}
+.sleep-person,.Alaaeldin-carpet{
+    width: 15vw;
+    height: 15vw;
+    margin: 2vw;
+}
+/* media query*/
+@media(max-width: 768px){
+    .home-content{
+        grid-area: "content";
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+    }
+}
